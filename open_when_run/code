@@ -1,0 +1,14 @@
+[Unit]
+Description=ROS 2 Node Auto Start
+After=network.target
+
+[Service]
+Type= simple
+User=myrobot
+ExecStartPre=/bin/sleep 5
+ExecStart=/bin/bash -c "source /opt/ros/jazzy/setup.bash && source /home/myrobot/ros2_jazzy/install/setup.bash && ros2 launch launchfile number_app.launch.xml"
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
