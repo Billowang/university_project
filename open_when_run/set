@@ -1,0 +1,7 @@
+sudo gedit /etc/systemd/system/ros2_node.service
+
+sudo systemctl daemon-reload
+sudo systemctl enable ros2_node.service
+
+sudo systemctl restart ros2_node.service
+sudo systemctl status ros2_node.service
