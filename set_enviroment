@@ -1,0 +1,2 @@
+source /opt/ros/jazzy/setup.bash
+source ~/ros2_jazzy/install/setup.bash
