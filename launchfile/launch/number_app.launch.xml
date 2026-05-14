@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="joystick" exec="joy_node" />
+    <node pkg="control" exec="controller_node" />
+    <node pkg="slampkg" exec="dist_node" /> 
+    <node pkg="arudino_pkg" exec="ard_node" /> 
+    
+</launch>

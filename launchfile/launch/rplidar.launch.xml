@@ -1,0 +1,20 @@
+<launch>
+    <node 
+        pkg="sllidar_ros2" 
+        exec="sllidar_node"
+        name="sllidar"
+        output="screen">
+
+        <param name="serial_port" value="/dev/mylidar"/>
+        <param name="serial_baudrate" value="115200"/>
+
+        <param name="frame_id" value="laser"/>
+
+        <param name="scan_frequency" value="5.0"/>
+        <param name="publish_tf" value="false"/>
+        <param name="publish_intensity" value="false"/>
+        <param name="angle_compensate" value="false"/>
+
+
+    </node>
+</launch>
