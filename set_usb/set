@@ -1,0 +1,4 @@
+sudo gedit /etc/udev/rules.d/99-ch340-usb.rules
+
+sudo udevadm control --reload-rules
+sudo udevadm trigger
