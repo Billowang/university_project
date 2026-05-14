@@ -1,0 +1,4 @@
+alias mk-ap='sudo nmcli con add type wifi ifname wlan0 mode ap con-name Hotspot ssid MyHotspot autoconnect yes && sudo nmcli con modify Hotspot 802-11-wireless-security.key-mgmt wpa-psk 802-11-wireless-security.psk 12345678 ipv4.method shared ipv4.addresses 192.168.1.1/24'
+
+alias go-ap='sudo nmcli con up Hotspot'
+alias go-wif='sudo nmcli con down Hotspot'
